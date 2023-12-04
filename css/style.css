@@ -1,0 +1,57 @@
+/* ?Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ?Generics */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ?Utils */
+.flex {
+    display: flex;
+}
+
+.border {
+    border: 2px dashed black;
+}
+
+/* !Main */
+.top-content {
+    background-color: dodgerblue;
+    height: calc(100vh - 80px);
+}
+
+.sidebar {
+    background-color: red;
+    flex-basis: 100px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+main {
+    background-color: goldenrod; 
+    flex-basis: 100%;
+    height: calc(100vh - 80px);
+}
+
+.header-main {
+    background-color: blue;
+    height: 80px;
+    overflow: hidden;
+}
+
+.main-content {
+    height: calc(100vh - 160px);
+    background-color: orange;
+    overflow: auto;
+}
+
+/* !Footer */
+footer {
+    background-color: #282828;
+    height: 80px;
+}
