@@ -11,47 +11,121 @@ body {
 }
 
 /* ?Utils */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 .flex {
     display: flex;
 }
 
 .border {
-    border: 2px dashed black;
+    border: 2px dashed white;
+}
+
+img {
+    width: 100%;
+    display: block;
 }
 
 /* !Main */
 .top-content {
     background-color: dodgerblue;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
 }
 
+/* Sidebar */
 .sidebar {
     background-color: red;
-    flex-basis: 100px;
+    flex-basis: 50px;
     overflow: hidden;
     flex-shrink: 0;
 }
 
-main {
-    background-color: goldenrod; 
-    flex-basis: 100%;
-    height: calc(100vh - 80px);
-}
-
-.header-main {
-    background-color: blue;
-    height: 80px;
+.top-sidebar {
+    height: calc(100vh - 170px);
     overflow: hidden;
 }
 
-.main-content {
-    height: calc(100vh - 160px);
-    background-color: orange;
+.bottom-sidebar {
+    height: 70px;
+}
+
+/* Main-content */
+main {
+    background-color: goldenrod; 
+    flex-basis: 100%;
+    height: calc(100vh - 100px);
     overflow: auto;
+}
+
+.header-main {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.category {
+    height: 110px;
+    margin-top: 120px;
+    background-color: fuchsia;
+}
+
+.title-recently {
+    height: 50px;
+    width: 200px;
+    margin: 20px 0;
+    background-color: grey;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    margin: 0 -1rem;
+}
+
+.col {
+    flex-basis: 50%;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: dodgerblue;
+    height: 250px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+    width: 100%;
+    height: auto;
+}
+
+.title-created-for {
+    height: 50px;
+    width: 200px;
+    margin: 20px 0;
+    background-color: coral;
+}
+
+.title-popular-artists {
+    height: 50px;
+    width: 200px;
+    margin: 20px 0;
+    background-color: pink;
 }
 
 /* !Footer */
 footer {
     background-color: #282828;
-    height: 80px;
+    height: 100px;
 }
