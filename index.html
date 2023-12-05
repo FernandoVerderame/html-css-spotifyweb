@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nerko+One&family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -19,15 +20,77 @@
 </head>
 <body>
     <div class="top-content flex">
+
+        <!-- Sidebar -->
         <div class="sidebar">
+
+            <!-- Top-sidebar -->
             <div class="top-sidebar border">
-                <div class="logo">                </div>
-                <div class="menù"></div>
-                <div class="playlist"></div>
+
+                <!-- Logo -->
+                <div class="logo mb-10">
+                    <img src="img/logo-small.svg" alt="Logo Spotify">    
+                </div>
+
+                <!-- Menù -->
+                <div class="menù">
+                    <ul>
+                        <li class="mb-10">
+                            <a href="#">
+                                <img src="img/home.svg" alt="Home">
+                                <span class="invisible">Home</span>
+                            </a>
+                        </li>
+                        <li class="mb-10">
+                            <a href="#">
+                                <img src="img/search.svg" alt="Cerca">
+                                <span class="invisible">Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/libreria.svg" alt="Libreria">
+                                <span class="invisible">La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Playlist -->
+                <div class="playlist">
+                    <h3 class="invisible">PLAYLIST</h3>
+                    <div class="invisible">
+                        <span class="add">+</span><span class="create-playlist">Crea Playlist</span>
+                    </div>
+                    <ul>
+                        <li class="invisible">Nome Playlist</li>
+                        <li class="invisible">Nome Playlist</li>
+                        <li class="invisible">Nome Playlist</li>
+                        <li class="invisible">Nome Playlist</li>
+                        <li class="invisible">Nome Playlist</li>
+                        <li class="invisible">Nome Playlist</li>
+                        <li class="invisible">Nome Playlist</li>
+                    </ul>
+                </div>
             </div>
+
+            <!-- Bottom-sidebar -->
             <div class="bottom-sidebar border">
+                <div class="download-app mb-10">
+                    <img src="img/download.svg" alt="Download">
+                    <span class="invisible">Installa app</span>
+                </div>
+
+                <div class="divider mb-10 invisible"></div>
+
+                <div class="profile">
+                    <img src="img/profile.svg" alt="Profilo">
+                    <span class="invisible">John Doe</span>
+                </div>
             </div>
         </div>
+
+        <!-- !Main -->
         <main>
             <div class="header-main"></div>
 
@@ -87,7 +150,7 @@
         </main>
     </div>
 
-    <!-- Footer -->
+    <!-- !Footer -->
     <footer>
     </footer>   
 </body>

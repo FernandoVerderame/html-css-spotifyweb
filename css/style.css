@@ -10,6 +10,20 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
 /* ?Utils */
 .container {
     max-width: 1200px;
@@ -25,9 +39,12 @@ body {
     border: 2px dashed white;
 }
 
-img {
-    width: 100%;
-    display: block;
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.invisible {
+    display: none;
 }
 
 /* !Main */
@@ -39,17 +56,51 @@ img {
 
 /* Sidebar */
 .sidebar {
-    background-color: red;
+    background-color: #000000;
     flex-basis: 50px;
     flex-shrink: 0;
 }
 
 .top-sidebar {
-    height: calc(100vh - 170px);
+    height: calc(100% - 80px);
+    padding: 8px;
+}
+
+.menù {
+    margin-bottom: 30px;
 }
 
 .bottom-sidebar {
-    height: 70px;
+    height: 80px;
+    padding: 8px;
+}
+
+.bottom-sidebar .download-app {
+    margin-left: 6px;
+}
+
+.download-app img {
+    width: 15px;
+    height: 15px;
+}
+
+.bottom-sidebar .divider {
+    width: 100%;
+    border-bottom: 1px solid #717171;
+}
+
+.bottom-sidebar .profile {
+    background-color: #808080;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    padding-left: 2px;
+    margin-left: 1px;
+}
+
+.profile img {
+    width: 23px;
+    height: 23px;
 }
 
 /* Main-content */
