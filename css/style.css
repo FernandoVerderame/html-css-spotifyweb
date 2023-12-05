@@ -17,6 +17,7 @@ ul {
 a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 img {
@@ -213,4 +214,140 @@ main {
 footer {
     background-color: #282828;
     height: 100px;
+}
+
+.footer-section {
+    flex-direction: row;
+}
+
+.footer-left {
+    flex-basis: calc(100% / 3);
+    height: 100px;
+}
+
+.footer-center {
+    flex-basis: calc(100% / 3);
+    height: 100px;
+}
+
+.footer-right {
+    flex-basis: calc(100% / 3);
+    height: 100px;
+}
+
+/* Footer left */
+.footer-left {
+    padding-left: 10px;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-left .card {
+    gap: 10px;
+}
+
+.footer-left .card-image {
+    width: 35px;
+}
+
+.footer-left .artist {
+    font-weight: 800;
+    font-size: 12px;
+    color: white;
+}
+
+.footer-left .name-song {
+    font-size: 10px;
+    color: #878787;
+    font-weight: 700;
+}
+
+.favourite .fa-regular {
+    color: #878787;
+}
+
+/* Footer center */
+.footer-center {
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+
+.footer-center ul {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 14px;
+    gap: 23px;
+}
+
+.footer-center .fa-circle-play {
+    font-size: 30px;
+    color: white;
+}
+
+.footer-center .fa-solid {
+    font-size: 18px;
+}
+
+.footer-center .time-bar {
+    flex-basis: 20%;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer-center .progress-bar {
+    flex-basis: 100%;
+    height: 4px;
+    width: 100%;
+    background-color: #5A5A5A;
+    margin-top: 5px;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.footer-center .current-progress {
+    position: absolute;
+    height: 4px;
+    left: 0;
+    top: 0;
+    width: 25%;
+    background-color: #C1C1C1;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Footer right */
+.footer-right {
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.footer-right ul {
+    gap: 10px;
+}
+
+.footer-right .fa-solid {
+    color: white;
+}
+
+.footer-right .progress-volume {
+    height: 4px;
+    width: 80px;
+    background-color: #5A5A5A;
+    margin-top: 5px;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 5px;
+}
+
+.footer-right .current-progress-volume {
+    position: absolute;
+    height: 4px;
+    left: 0;
+    top: 0;
+    width: 25%;
+    background-color: #C1C1C1;
+    border-radius: 10px 10px 10px 10px;
 }
