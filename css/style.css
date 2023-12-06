@@ -103,6 +103,7 @@ h5 {
     margin-bottom: 30px;
 }
 
+
 .menù img {
     width: 30px;
     vertical-align: bottom;
@@ -123,6 +124,15 @@ h5 {
     font-weight: 700;
 }
 
+.menù li.active::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #ADFF2F;
+    margin: 3px auto;
+}
+
 .playlist h4 {
     color: white;
     font-size: 14px;
@@ -131,6 +141,7 @@ h5 {
 .playlist .fa-square-plus {
     color: #A3A3A3;
     font-size: 40px;
+    vertical-align: middle;
 }
 
 .playlist .create-playlist {
@@ -138,13 +149,24 @@ h5 {
     font-size: 15px;
     font-weight: 700;
     margin-left: 10px;
-    margin-top: 10px;
 }
 
 .playlist a {
     color: #717171;
     font-size: 13px;
     font-weight: 700;
+}
+
+.menù span:hover {
+    color: white;
+}
+
+.playlist a:hover {
+    color: white;
+}
+
+.playlist .fa-square-plus:hover {
+    color: white;
 }
 
 /* Bottom-sidebar */
@@ -194,6 +216,10 @@ h5 {
     padding-left: 10px;
 }
 
+.bottom-sidebar span:hover {
+    color: white;
+}
+
 /* !Main-content */
 main {
     background-color: #141922; 
@@ -221,8 +247,11 @@ main {
     border-radius: 20px;
     font-size: 13px;
     font-weight: 700;
-    margin-right: 5px;
+    margin-right: 20px;
+}
 
+.header-main .button:hover {
+    transform: scale(1.1);
 }
 
 .category ul {
@@ -236,6 +265,19 @@ main {
     font-weight: 700;
     font-size: 13px;
     color: #7D7F84;
+}
+
+.category a:hover {
+    color: white;
+}
+
+.category li.active::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: #ADFF2F;
+    margin: 3px auto;
 }
 
 .row {
@@ -254,6 +296,31 @@ main {
 .card-image {
     width: 100%;
     height: auto;
+}
+
+.card .card-image {
+    position: relative;
+}
+
+.player {
+    color: white;
+    font-size: 50px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(12, 15, 20, 0.5);
+}
+
+.card .card-image:hover .player {
+    display: flex;
 }
 
 .card-info {
@@ -276,6 +343,10 @@ main {
 }
 
 .circle img {
+    border-radius: 50%;
+}
+
+.circle .player {
     border-radius: 50%;
 }
 
@@ -329,12 +400,21 @@ footer {
     font-size: 10px;
     color: #878787;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .favourite .fa-regular {
     color: #878787;
 }
 
+.song .name-song:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.favourite i:hover {
+    color: white;
+}
 /* Footer center */
 .footer-center {
     padding-top: 16px;
@@ -373,6 +453,7 @@ footer {
     margin-top: 5px;
     position: relative;
     border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
 }
 
 .footer-center .current-progress {
@@ -383,6 +464,35 @@ footer {
     width: 25%;
     background-color: #C1C1C1;
     border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.current-progress .marker {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: white;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    translate: (50% -50%);
+
+    opacity: 0;
+}
+
+.footer-center .fa-circle-play:hover {
+    transform: scale(1.2);
+}
+
+.progress-bar .current-progress:hover {
+    background-color: #ADFF2F;
+}
+
+.current-progress .marker:hover {
+    opacity: 1;
 }
 
 /* Footer right */
@@ -409,6 +519,7 @@ footer {
     position: relative;
     border-radius: 10px 10px 10px 10px;
     padding-top: 5px;
+    cursor: pointer;
 }
 
 .footer-right .current-progress-volume {
@@ -419,4 +530,32 @@ footer {
     width: 25%;
     background-color: #C1C1C1;
     border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
 }
+
+.current-progress-volume .marker {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: white;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    translate: (50% -50%);
+
+    opacity: 0;
+}
+
+.progress-volume .current-progress-volume:hover {
+    background-color: #ADFF2F;
+}
+
+.current-progress-volume .marker:hover {
+    opacity: 1;
+}
+
+
+
