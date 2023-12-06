@@ -1,0 +1,31 @@
+/* Mobile S */
+@media screen and (min-width: 639px) {
+    .sidebar {
+        flex-basis: 220px;
+    }
+
+    .top-sidebar {
+        padding: 10px;
+    }
+
+    .bottom-sidebar {
+        padding: 10px;
+    }
+
+    .bottom-sidebar .download-app {
+        margin-left: 0;
+    }
+
+    /* Utilities */
+    .d-sm-none {
+        display: none;
+    }
+
+    .d-sm-inline {
+        display: inline;
+    }
+    
+    .d-sm-block {
+        display: block;
+    }
+}

@@ -27,8 +27,9 @@
             <div class="top-sidebar">
 
                 <!-- Logo -->
-                <div class="logo mb-10">
-                    <img src="img/logo-small.svg" alt="Logo Spotify">    
+                <div class="logo">
+                    <img class="logo-small mb-10 d-sm-none" src="img/logo-small.svg" alt="Logo Spotify">
+                    <img class="logo-big d-none d-sm-inline" src="img/logo.svg" alt="Logo Spotify">   
                 </div>
 
                 <!-- Menù -->
@@ -37,38 +38,39 @@
                         <li class="mb-10">
                             <a href="#">
                                 <img src="img/home.svg" alt="Home">
-                                <span class="invisible">Home</span>
+                                <span class="home d-none d-sm-inline">Home</span>
                             </a>
                         </li>
                         <li class="mb-10">
                             <a href="#">
                                 <img src="img/search.svg" alt="Cerca">
-                                <span class="invisible">Cerca</span>
+                                <span class="search d-none d-sm-inline">Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="img/libreria.svg" alt="Libreria">
-                                <span class="invisible">La tua libreria</span>
+                                <span class="library d-none d-sm-inline">La tua libreria</span>
                             </a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Playlist -->
-                <div class="playlist">
-                    <h4 class="invisible">PLAYLIST</h4>
-                    <div class="invisible">
-                        <span class="add">+</span><span class="create-playlist">Crea Playlist</span>
+                <div class="playlist d-none d-sm-block">
+                    <h4 class="mb-10">PLAYLIST</h4>
+                    <div class="flex mb-10">
+                        <div><a href="#"><i class="fa-solid fa-square-plus"></i></a></div>
+                        <div class="create-playlist">Crea Playlist</div>        
                     </div>
                     <ul>
-                        <li class="invisible">Nome Playlist</li>
-                        <li class="invisible">Nome Playlist</li>
-                        <li class="invisible">Nome Playlist</li>
-                        <li class="invisible">Nome Playlist</li>
-                        <li class="invisible">Nome Playlist</li>
-                        <li class="invisible">Nome Playlist</li>
-                        <li class="invisible">Nome Playlist</li>
+                        <li class="mb-18"><a href="#">Nome Playlist</a></li>
+                        <li class="mb-18"><a href="#">Nome Playlist</a></li>
+                        <li class="mb-18"><a href="#">Nome Playlist</a></li>
+                        <li class="mb-18"><a href="#">Nome Playlist</a></li>
+                        <li class="mb-18"><a href="#">Nome Playlist</a></li>
+                        <li class="mb-18"><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
             </div>
@@ -76,15 +78,17 @@
             <!-- Bottom-sidebar -->
             <div class="bottom-sidebar">
                 <div class="download-app mb-10">
-                    <img src="img/download.svg" alt="Download">
-                    <span class="invisible">Installa app</span>
+                    <a href="#"><img src="img/download.svg" alt="Download"></a>
+                    <a href="#"><span class="d-none d-sm-inline">Installa app</span></a>
                 </div>
 
-                <div class="divider mb-10 invisible"></div>
+                <div class="divider mb-10 d-none d-sm-block"></div>
 
-                <div class="profile">
-                    <img src="img/profile.svg" alt="Profilo">
-                    <span class="invisible">John Doe</span>
+                <div class="flex">
+                    <div class="profile">
+                        <img src="img/profile.svg" alt="Profilo">
+                    </div>
+                    <span class="owner d-none d-sm-inline">John Doe</span>
                 </div>
             </div>
         </div>
